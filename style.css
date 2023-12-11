@@ -138,6 +138,11 @@ span {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    position: fixed;
+    background-color: #0E4DA4;
+    position: sticky;
+    z-index: 2;
+    margin: auto;
 }
 
 .sidebar {
@@ -156,7 +161,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin-right: 15px; 
+    margin-right: auto; 
 }
 
 nav ul li a {
@@ -198,6 +203,7 @@ h1 {
     font-size: 60px;
     line-height: 76px;
     margin-top: 20px;
+    margin-bottom: 50px;
     color: #0E4DA4;
 }
 
@@ -211,6 +217,7 @@ h2 {
 
 .header-text h2 {
     margin-top: 20px;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 32px;
     font-weight: 400;
@@ -226,6 +233,7 @@ h2 {
 .container {
     padding: 30px 10%;
     color: #1d2b3f;
+    z-index: 1;
 }
 
 #projects {
@@ -240,6 +248,7 @@ h2 {
 }
 
 .project {
+    width: 500px;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -248,7 +257,6 @@ h2 {
 }
 
 .project img {
-    width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -262,6 +270,7 @@ h2 {
     left: 0;
     bottom: 0;
     overflow: hidden;
+    inline-size: auto;
     color: #0E4DA4;
     display: flex;
     align-items: center;
@@ -286,17 +295,28 @@ body, html {
     padding: 0;
     height: 100%;
 }
-
 #lottie-container-about {
     position: fixed;
     top: 0;
-    right: 80;
+    right: 100;
+
     width: 100%;
     height: 100%;
     pointer-events: none;
+    z-index: -1;
 }
 
 .row {
     display: flex;
     flex-direction: column;
+}
+
+.body-2-text {
+    inline-size: 500px;
+}
+
+.instagram-lottie {
+    width: 500px;
+    height: 370px;
+    overflow: hidden;
 }

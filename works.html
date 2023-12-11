@@ -14,6 +14,7 @@
 
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.10/lottie.min.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <script src="site.js" defer></script>
     </head>
 
@@ -26,7 +27,7 @@
             <div class="sidebar">
                 <div class="container">
                     <nav class="menu">
-                        <ul>
+                        <ul class="container">
                             <li>
                                 <a href = "#header" class="delayed-underline"> Home </a>
                             </li>
@@ -48,7 +49,12 @@
                     <div class="header-main-text">
                         <p>Product Manager + UX Designer</p>
                     </div>
-
+                   
+                    <!-- <div id="lottie-container-about">
+                         <lottie-player src="bubble.json"  speed="1"  style="width: auto;" loop autoplay>
+                        </lottie-player>
+                    </div> -->
+                   
                     <div class="header-text">
                         <h1>
                             Amelia
@@ -69,50 +75,20 @@
                 </div>
                 <div class="row">
                     <div class="about-col-1">
-                        <div class="about-header-text">
-                            <p>Hi!</p>
-                        </div>
                         <div class="about-body-text">
-                            <h1>About Me</h1>
+                            <h1>01. About Me</h1>
                         </div>
                     </div>
                     <div class="about-col-2">
                         <div class="body-2-text">
-                            Hi! My name is Amelia Austin, and I am currently a senior at 
-                            <br>
-                            Carnegie Mellon University studying Decision Science and Human-
-                            <br>
+                            Hi! My name is Amelia Austin, and I am currently a senior at Carnegie Mellon University studying Decision Science and Human-
                             Computer Interaction.
                             <br>
                             <br>
-                            Decision Science involves the application of scientific methods 
-                            <br>
-                            and analytical techniques to make informed decisions. It encompasses 
-                            <br>
-                            various disciplines, such as statistics, mathematics, and behavioral 
-                            <br>
-                            science, to understand and optimize decision-making processes. HCI, 
-                            <br>
-                            on the other hand, focuses on the design and interaction between humans 
-                            <br>
-                            and computers, ensuring that technology is user-friendly, efficient, 
-                            <br>
-                            and meets users' needs.
+                            Decision Science involves the application of scientific methods and analytical techniques to make informed decisions. It encompasses various disciplines, such as statistics, mathematics, and behavioral science, to understand and optimize decision-making processes. HCI, on the other hand, focuses on the design and interaction between humans and computers, ensuring that technology is user-friendly, efficient, and meets users' needs.
                             <br>
                             <br>
-                            Combining knowledge in Decision Science and Human-Computer Interaction, 
-                            <br>
-                            I aim to leverage data-driven insights and user-centric design principles 
-                            <br>
-                            to innovate in healthcare technology. In the realm of healthcare, where 
-                            <br>
-                            decisions can have a profound impact on patient outcomes, integrating these 
-                            <br>
-                            disciplines becomes crucial. By understanding the intricacies of decision-making 
-                            <br>
-                            in healthcare contexts and developing technology that aligns with the needs and 
-                            <br>
-                            preferences of patients, I aspire to enhance the overall healthcare experience.
+                            Combining knowledge in Decision Science and Human-Computer Interaction, I aim to leverage data-driven insights and user-centric design principles to innovate in healthcare technology. In the realm of healthcare, where decisions can have a profound impact on patient outcomes, integrating these disciplines becomes crucial. By understanding the intricacies of decision-making in healthcare contexts and developing technology that aligns with the needs and preferences of patients, I aspire to enhance the overall healthcare experience.
                         </div>
                     </div>
                 </div>
@@ -121,23 +97,49 @@
         <div id="projects">
             <div class="container" id="lottie-container-projects">
                 <div class="project-header-text">
-                    <h1> Projects </h1>
+                    <h1> 02. Projects </h1>
                 </div>
                 <div class="project-list">
                     <div class="project">
-                        <img src="Project-1.png">
+                        <img src="Project-1.png" style="width: 100%; max-width: 500px;">
                         <a href="project.html">
                             <div class="layer">
-                                <h3>Melissa & Doug</h3>
+                                <h3> Melissa & Doug </h3>
                                 <p>
-                                    Creating a mobile service platform for a toy company 
-                                    <br>
-                                    meant to keep children off screens
+                                    Creating a mobile service platform for a toy company meant to keep children off screens
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project">
+                        <lottie-player class="instagram-lottie" src="instagram.json" background="#6C7895"  speed="1"  style="width: 100%;" loop autoplay>
+                        </lottie-player>
+                        <a href="project.html">
+                            <div class="layer">
+                                <h3> #NoFilter </h3>
+                                <p>
+                                    Designing an Instagram campaign to incentivize users to not filter their posted photos
                                 </p>
                             </div>
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div id="contact" class="container">
+            <div class="project-header-text">
+                <h1> 03. Contact </h1>
+            </div>
+            <div class="contact">
+                <a class="btn-lg" href="mailto:ameliaa@andrew.cmu.edu" rel="noopener noreferrer" target="_blank"> Get In Touch </a>
+                <!-- <form action="">
+                    <label for="name"> Name </label>
+                    <input type="text" id="name" name="name" placeholder="Your name...">
+                </form> -->
+            </div>
+            <div>
+
             </div>
 
         </div>
