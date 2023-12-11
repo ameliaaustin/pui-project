@@ -15,45 +15,44 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.10/lottie.min.js"></script>
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
         <script src="site.js" defer></script>
     </head>
 
     <body>
+       
         <div class="header" id="header">
             <!-- <div class="small-logo">
                 <a href="./index.html" class="strikethrough-menu"> AA </a>
             </div> -->
-
+            <!-- navigation bar -->
             <div class="sidebar">
                 <div class="container">
                     <nav class="menu">
                         <ul class="container">
-                            <li>
-                                <a href = "#header" class="delayed-underline"> Home </a>
-                            </li>
-                            <li>
-                                <a href = "#about" class="delayed-underline"> About </a>
-                            </li>
-                            <li>
-                                <a href = "#projects" class="delayed-underline"> Projects </a>
-                            </li>
-                            <li>
-                                <a href = "#contact" class="delayed-underline"> Contact </a>
-                            </li>
-                            <li>
-                                <a href = "./AmeliaAustinResumeDownload.pdf" class="delayed-underline"> Resume </a>
-                            </li>
+                            <div class = "head">
+                                <li>
+                                    <a href = "#header" class="delayed-underline"> Home </a>
+                                </li>
+                                <li>
+                                    <a href = "#about" class="delayed-underline"> About </a>
+                                </li>
+                                <li>
+                                    <a href = "#projects" class="delayed-underline"> Projects </a>
+                                </li>
+                                <li>
+                                    <a href = "#contact" class="delayed-underline"> Contact </a>
+                                </li>
+                                <li>
+                                    <a href = "./AmeliaAustinResumeDownload.pdf" class="delayed-underline"> Resume </a>
+                                </li>
+                            </div>
                         </ul>
                     </nav>
-
+                    <!-- header -->
                     <div class="header-main-text">
                         <p>Product Manager + UX Designer</p>
                     </div>
-                   
-                    <!-- <div id="lottie-container-about">
-                         <lottie-player src="bubble.json"  speed="1"  style="width: auto;" loop autoplay>
-                        </lottie-player>
-                    </div> -->
                    
                     <div class="header-text">
                         <h1>
@@ -68,40 +67,49 @@
                 </div> 
             </div>    
         </div>
-
+        <div class="container">
+            <div class = "animation">
+                <div id="lottie-container-about"></div>
+            </div>
+        </div>
+        <!-- about section -->
         <div id="about">
-            <div class="container">
-                <div id="lottie-container-about">
-                </div>
-                <div class="row">
-                    <div class="about-col-1">
+            
+            <div id="about" class = "container">
+                <div  class = "row">
+                    <div class = "col-lg-12">
                         <div class="about-body-text">
                             <h1>01. About Me</h1>
                         </div>
                     </div>
-                    <div class="about-col-2">
-                        <div class="body-2-text">
-                            Hi! My name is Amelia Austin, and I am currently a senior at Carnegie Mellon University studying Decision Science and Human-
-                            Computer Interaction.
-                            <br>
-                            <br>
-                            Decision Science involves the application of scientific methods and analytical techniques to make informed decisions. It encompasses various disciplines, such as statistics, mathematics, and behavioral science, to understand and optimize decision-making processes. HCI, on the other hand, focuses on the design and interaction between humans and computers, ensuring that technology is user-friendly, efficient, and meets users' needs.
-                            <br>
-                            <br>
-                            Combining knowledge in Decision Science and Human-Computer Interaction, I aim to leverage data-driven insights and user-centric design principles to innovate in healthcare technology. In the realm of healthcare, where decisions can have a profound impact on patient outcomes, integrating these disciplines becomes crucial. By understanding the intricacies of decision-making in healthcare contexts and developing technology that aligns with the needs and preferences of patients, I aspire to enhance the overall healthcare experience.
-                        </div>
+                </div>
+                <div class = "row">
+                    <div class = "col-lg-12">
+                        <p>Hi! My name is Amelia Austin, and I am currently a senior at Carnegie Mellon University studying Decision Science and Human-
+                            Computer Interaction.</p>
+                    </div>
+                    <div class = "col-lg-12">
+                        <p> Decision Science involves the application of scientific methods and analytical techniques to make informed decisions. It encompasses various disciplines, such as statistics, mathematics, and behavioral science, to understand and optimize decision-making processes. HCI, on the other hand, focuses on the design and interaction between humans and computers, ensuring that technology is user-friendly, efficient, and meets users' needs.</p>
+                    </div>
+                    <div class = "col-lg-12">
+                        <p> Combining knowledge in Decision Science and Human-Computer Interaction, I aim to leverage data-driven insights and user-centric design principles to innovate in healthcare technology. In the realm of healthcare, where decisions can have a profound impact on patient outcomes, integrating these disciplines becomes crucial. By understanding the intricacies of decision-making in healthcare contexts and developing technology that aligns with the needs and preferences of patients, I aspire to enhance the overall healthcare experience.</p>
                     </div>
                 </div>
             </div>
-        
+            
+
+            </div>
+
+        <!-- project section -->
         <div id="projects">
             <div class="container" id="lottie-container-projects">
                 <div class="project-header-text">
                     <h1> 02. Projects </h1>
                 </div>
+
                 <div class="project-list">
                     <div class="project">
-                        <img src="Project-1.png" style="width: 100%; max-width: 500px;">
+                        <img src="Project-1.png" style="width: 100%; max-width: 500px;" alt="Melissa & Doug Prototype">
                         <a href="project.html">
                             <div class="layer">
                                 <h3> Melissa & Doug </h3>
@@ -111,6 +119,8 @@
                             </div>
                         </a>
                     </div>
+
+                    
                     <div class="project">
                         <lottie-player class="instagram-lottie" src="instagram.json" background="#6C7895"  speed="1"  style="width: 100%;" loop autoplay>
                         </lottie-player>
@@ -126,23 +136,25 @@
                 </div>
             </div>
         </div>
-
-        <div id="contact" class="container">
-            <div class="project-header-text">
-                <h1> 03. Contact </h1>
+        <!-- contact section -->
+        <div id = "contact" class = "container">
+            <div class = "row">
+                <div class = "col-lg-12 project-header-text">
+                    <h1> 03. Contact </h1>
+                </div>
             </div>
-            <div class="contact">
-                <a class="btn-lg" href="mailto:ameliaa@andrew.cmu.edu" rel="noopener noreferrer" target="_blank"> Get In Touch </a>
-                <!-- <form action="">
-                    <label for="name"> Name </label>
-                    <input type="text" id="name" name="name" placeholder="Your name...">
-                </form> -->
-            </div>
-            <div>
+            <div class = "row">
+                <div class = "col-lg-6" id="contact-info">
+                        <div class="contact-text">
+                            <h3> Please get in touch! </h3>
+                        </div>
 
+                        <ul class="social-icons">
+                            <li><a href="https://www.linkedin.com/in/ameliaaustin/" class="social-icon-link" style = "color: black;" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="mailto:ameliaa@andrew.cmu.edu" rel="noopener noreferrer" target="_blank" class="social-icon-link" style = "color: black;"><i class="fa-regular fa-envelope"></i></a></li>
+                        </ul>
+                </div>
             </div>
-
-        </div>
         </div>
     </body>
 </html>

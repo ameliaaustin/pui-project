@@ -136,13 +136,10 @@ span {
 
 .menu {
     display: flex;
-    justify-content: flex-end;
+    justify-content:flex-end;
     align-items: flex-end;
-    position: fixed;
-    background-color: #0E4DA4;
     position: sticky;
     z-index: 2;
-    margin: auto;
 }
 
 .sidebar {
@@ -185,7 +182,7 @@ nav ul li a {
     margin: 0;
     background-size: 400px 24px;
     background-clip: text;
-    color: #0E4DA4;
+    color: black;
 }
 
 h1 {
@@ -204,7 +201,7 @@ h1 {
     line-height: 76px;
     margin-top: 20px;
     margin-bottom: 50px;
-    color: #0E4DA4;
+    color: black;
 }
 
 h2 {
@@ -240,10 +237,14 @@ h2 {
     background-color: #5B9BBD;
 }
 
+
+
 .project-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(250px, 1fr));
-    grid-gap: 40px;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-gap: 40px; */
     margin-top: 50px;
 }
 
@@ -254,6 +255,7 @@ h2 {
     overflow: hidden;
     box-shadow: 4px 4px 8px #1e3897;
     transition: box-shadow 0.5s;
+    margin-bottom: 24px;
 }
 
 .project img {
@@ -295,12 +297,18 @@ body, html {
     padding: 0;
     height: 100%;
 }
+
+.animation{
+    outline:auto;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:flex-end;
+}
 #lottie-container-about {
     position: fixed;
     top: 0;
-    right: 100;
-
-    width: 100%;
+    width: 50%;
     height: 100%;
     pointer-events: none;
     z-index: -1;
@@ -319,4 +327,42 @@ body, html {
     width: 500px;
     height: 370px;
     overflow: hidden;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    width: 50%;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 30px;
+    }
+
+.social-icon-link {
+    font-size: 50px;
+    text-decoration: none;
+}
+
+#contact{
+    background-color:#8B99CE;
+}
+
+.contact {
+    display: flex;
+} 
+
+#contact-info {
+    display:flex;
+}
+
+.contact-text {
+    width: 50%;
+    text-align: center;
+}
+
+.description {
+    display: flex;
 }
