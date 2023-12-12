@@ -1,13 +1,16 @@
+/* background color for all pages */
 body {
     background: radial-gradient(circle at 0% 100%, #8B99CE, #5B9BBD, #608ECB);
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
 }
 
+/* makes all links black */
 a {
     text-decoration: none;
     color: black;
 }
 
+/* creates underline animation for elements in nav bar */
 .delayed-underline {
     position: relative;
     text-decoration: none;
@@ -15,14 +18,14 @@ a {
 }
 
 .delayed-underline::after {
-    content: '';
+    content: '';    
+    height: 3px; 
     position: absolute;
     width: 0;
-    height: 3px; 
-    background-color: black;
     bottom: 0;
     left: 0;
-    transition: width 0.5s ease; 
+    transition: width 0.5s ease;     
+    background-color: black;
 }
 
 .delayed-underline:hover::after {
@@ -30,13 +33,12 @@ a {
 }
 
 .logo {
-    font-family: 'Roboto Serif', serif;
-    color: white;
-    font-size: 100px;
+    font-family: 'Roboto Serif';
+    color: black;
+    font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 .logo-spacing {
@@ -44,6 +46,7 @@ a {
     background-color: grey;
     border-radius: 30px;
     padding: 40px;
+    width: 55%;
 }
 
 .name {
@@ -54,7 +57,6 @@ a {
 .strikethrough {
     text-decoration: none;
     position: relative;
-    
 }
 
 .strikethrough::after {
@@ -65,7 +67,7 @@ a {
     top: 44%;
     width: 82%;
     height: 17px;
-    background-color: white; 
+    background-color: black; 
     transform-origin: left;
     transform: scaleX(0);
     animation: strikethroughAnimation 1s ease-out forwards;
@@ -83,12 +85,12 @@ a {
 
 .explore {
     position: relative;
-    font-size: 40px;
+    font-size: 30px;
     margin: auto;
-    margin-left: 70px;
+    margin-left: 100px;
 }
 
-span {
+.explore a span {
     position: relative;
     display: inline-block;
     letter-spacing: 5px;
@@ -103,11 +105,6 @@ span {
     20% {
         transform: translateY(-70px);
     }
-}
-
-.header {
-    display: flex;
-    font-size: 30px;
 }
 
 .small-logo {
@@ -137,12 +134,11 @@ span {
 .menu {
     display: flex;
     justify-content:flex-end;
-    align-items: flex-end;
     position: sticky;
     z-index: 2;
 }
 
-.sidebar {
+.navbar {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -171,56 +167,32 @@ nav ul li a {
     position: relative;
 }
 
-.header-main-text {
+.header-text-1 {
     display: block;
-    text-align: left;
-    margin-top: 20%;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 24px;
-    text-transform: capitalize;
-    margin: 0;
-    background-size: 400px 24px;
-    background-clip: text;
     color: black;
-}
-
-h1 {
-    display: block;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
 
 .header-text h1 {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
+    font-family: sans-serif;
     font-weight: 600;
     font-size: 60px;
-    line-height: 76px;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    line-height: 80px;
+    margin-top: 30px;
+    margin-bottom: 40px;
     color: black;
 }
 
-h2 {
-    display: block;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
 .header-text h2 {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 25px;
     font-size: 16px;
-    line-height: 32px;
+    line-height: 35px;
     font-weight: 400;
-    letter-spacing: 1px;
-    text-transform: none;
-    color: #081d3a;
+    letter-spacing: 2px;
+    color: black;
 }
 
 #about {
@@ -237,14 +209,10 @@ h2 {
     background-color: #5B9BBD;
 }
 
-
-
 .project-list {
     display: flex;
     justify-content:space-evenly;
     flex-wrap: wrap;
-    /* grid-template-columns: repeat(2, minmax(250px, 1fr));
-    grid-gap: 40px; */
     margin-top: 50px;
 }
 
@@ -253,27 +221,18 @@ h2 {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    box-shadow: 4px 4px 8px #1e3897;
-    transition: box-shadow 0.5s;
     margin-bottom: 24px;
-}
-
-.project img {
-    border-radius: 10px;
-    display: block;
-    transition: transform 0.5s;
 }
 
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(179.86deg, rgba(255, 255, 255, 0.455026) 0.12%, #FFFFFF 46.88%);
-    position: absolute;
     left: 0;
     bottom: 0;
+    background: linear-gradient(179.86deg, rgba(255, 255, 255, 0.455026) 0.12%, #FFFFFF 46.88%);
+    position: absolute;
     overflow: hidden;
     inline-size: auto;
-    color: #0E4DA4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -281,21 +240,14 @@ h2 {
     padding: 0 40px;
     text-align: center;
     transition: height 0.5s;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 20px;
     line-height: 24px;
-    letter-spacing: 1px;
-    color: rgba(0, 0, 0, 0.62);
+    color: rgb(82, 80, 80);
 }
 
 .project:hover .layer {
     height: 100%
-}
-
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
 }
 
 .animation{
@@ -305,6 +257,7 @@ body, html {
     display:flex;
     justify-content:flex-end;
 }
+
 #lottie-container-about {
     position: fixed;
     top: 0;
@@ -329,21 +282,23 @@ body, html {
     overflow: hidden;
 }
 
-.social-icons {
+.icons {
     display: flex;
     margin-top: 10px;
     justify-content: center;
     width: 50%;
 }
 
-.social-icons li {
+.icons li {
     display: inline-block;
     margin-right: 30px;
     }
 
-.social-icon-link {
-    font-size: 50px;
+.icons li a {
+    font-size: 30px;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
 #contact{
@@ -365,4 +320,37 @@ body, html {
 
 .description {
     display: flex;
+}
+
+span {
+    font-weight: bold;
+}
+
+.row {
+    flex-direction: row;
+    /* margin-bottom: 50px; */
+}
+
+.stakeholders {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.stakeholder {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#figma-link {
+    margin-top: 50px;
+}
+
+.contact-row {
+    display: flex;
+    width: 50%;
+    justify-content: center;
 }
