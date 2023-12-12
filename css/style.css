@@ -17,6 +17,7 @@ a {
     color: black; 
 }
 
+/* nav bar element is underlines when hovered over */
 .delayed-underline::after {
     content: '';    
     height: 3px; 
@@ -32,6 +33,7 @@ a {
     width: 100%;
 }
 
+/* centering logo on landing page */
 .logo {
     font-family: 'Roboto Serif';
     color: black;
@@ -39,8 +41,10 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
+/* centering logo content on langing page */
 .logo-spacing {
     display: flex;
     background-color: grey;
@@ -49,45 +53,25 @@ a {
     width: 55%;
 }
 
+/* syling name */
 .name {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
-.strikethrough {
-    text-decoration: none;
-    position: relative;
-}
-
-.strikethrough::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 44%;
-    width: 82%;
-    height: 17px;
-    background-color: black; 
-    transform-origin: left;
-    transform: scaleX(0);
-    animation: strikethroughAnimation 1s ease-out forwards;
-}
-
-@keyframes strikethroughAnimation {
-    100% {
-        transform: scaleX(1);
-    }
-}
-
+/* moving last name over */
 .austin {
     margin-left: 100px;
 }
 
+/* creating letter jumping animation */
 .explore {
     position: relative;
-    font-size: 30px;
+    font-size: 2vw;
     margin: auto;
-    margin-left: 100px;
+    margin-left: 3vw;
+    width: 50%;
 }
 
 .explore a span {
@@ -107,30 +91,7 @@ a {
     }
 }
 
-.small-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.strikethrough-menu {
-    text-decoration: none;
-    position: relative;
-    
-}
-
-.strikethrough-menu::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    height: 3px;
-    background-color: white; 
-}
-
+/* styling the navigation bar */
 .menu {
     display: flex;
     justify-content:flex-end;
@@ -167,6 +128,7 @@ nav ul li a {
     position: relative;
 }
 
+/* styling header text on main page */
 .header-text-1 {
     display: block;
     font-size: 20px;
@@ -175,6 +137,7 @@ nav ul li a {
     color: black;
 }
 
+/* changing styling of main title */
 .header-text h1 {
     font-family: sans-serif;
     font-weight: 600;
@@ -185,6 +148,7 @@ nav ul li a {
     color: black;
 }
 
+/* changing styling of subtitle*/
 .header-text h2 {
     margin-top: 10px;
     margin-bottom: 25px;
@@ -195,20 +159,24 @@ nav ul li a {
     color: black;
 }
 
+/* changing section background */
 #about {
     background-color: #8B99CE;
 }
 
+/* styling for bootstrap element */
 .container {
     padding: 30px 10%;
     color: #1d2b3f;
     z-index: 1;
 }
 
+/* changing section background */
 #projects {
     background-color: #5B9BBD;
 }
 
+/* styling project blocks */
 .project-list {
     display: flex;
     justify-content:space-evenly;
@@ -216,6 +184,7 @@ nav ul li a {
     margin-top: 50px;
 }
 
+/* creating first glance project animations */
 .project {
     width: 500px;
     border-radius: 10px;
@@ -224,6 +193,7 @@ nav ul li a {
     margin-bottom: 24px;
 }
 
+/* styling the hover pop up with information */
 .layer {
     width: 100%;
     height: 0;
@@ -250,6 +220,7 @@ nav ul li a {
     height: 100%
 }
 
+/* fitting animation to box */
 .animation{
     outline:auto;
     width:100%;
@@ -258,6 +229,7 @@ nav ul li a {
     justify-content:flex-end;
 }
 
+/* fitting bubble animation in container */
 #lottie-container-about {
     position: fixed;
     top: 0;
@@ -267,6 +239,7 @@ nav ul li a {
     z-index: -1;
 }
 
+/* styling for bootstrap on main page */
 .row {
     display: flex;
     flex-direction: column;
@@ -276,12 +249,14 @@ nav ul li a {
     inline-size: 500px;
 }
 
+/* styling annimations */
 .lottie {
     width: 500px;
     height: 370px;
     overflow: hidden;
 }
 
+/* styling social media icons at bottom */
 .icons {
     display: flex;
     margin-top: 10px;
@@ -301,6 +276,7 @@ nav ul li a {
     justify-content: center;
 }
 
+/* changing background color of container */
 #contact{
     background-color:#8B99CE;
 }
@@ -330,6 +306,7 @@ span {
     flex-direction: row;
 }
 
+/* styling stakeholder list on nofilter page */
 .stakeholders {
     list-style-type: none;
     padding: 0;

@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
 
-        <title>Home Page</title>
+        <title>Main Page</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,17 +15,21 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.10/lottie.min.js"></script>
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
-        <script src="site.js" defer></script>
+        <script src="js/site.js" defer></script>
     </head>
 
     <body>
         <!-- navigation bar -->
         <div class="header" id="header">
             <div class="navbar">
+                <!-- bootstrap container -->
                 <div class="container">
                     <nav class="menu">
+                        <!-- bootstrap container for navigation bar list -->
                         <ul class="container">
                             <div class="head">
+                                <!-- on main page, each item in navigation bar jumps to that part of the page -->
+                                <!-- each item in navigation bar has a delayed underline on hover -->
                                 <li>
                                     <a href = "#header" class="delayed-underline"> Home </a>
                                 </li>
@@ -39,7 +43,8 @@
                                     <a href = "#contact" class="delayed-underline"> Contact </a>
                                 </li>
                                 <li>
-                                    <a href = "./AmeliaAustinResumeDownload.pdf" class="delayed-underline"> Resume </a>
+                                    <!-- links to a pdf of my resume -->
+                                    <a href = "assets/docs/AmeliaAustinResumeDownload.pdf" class="delayed-underline"> Resume </a>
                                 </li>
                             </div>
                         </ul>
@@ -49,6 +54,7 @@
                         <p>Product Manager + UX Designer</p>
                     </div>
                    
+                    <!-- header title -->
                     <div class="header-text">
                         <h1>
                             Amelia
@@ -62,46 +68,56 @@
                 </div> 
             </div>    
         </div>
+        <!-- container for bubble animation -->
         <div class="container">
             <div class="animation">
+                <!-- built in javascript -->
                 <div id="lottie-container-about"></div>
             </div>
         </div>
         <!-- about section -->
         <div id="about">
             <div class="container">
+                <!-- bootstrap row -->
                 <div class="row">
+                    <!-- bootstrap full length column -->
                     <div class="col-lg-12">
+                        <!-- about me title text -->
                         <div class="about-body-text">
                             <h1>01. About Me</h1>
                         </div>
                     </div>
                 </div>
+                <!-- bootstrap row -->
                 <div class="row">
+                    <!-- bootstrap full length column -->
                     <div class="col-lg-12">
-                        <p>Hi! My name is Amelia Austin, and I am currently a senior at Carnegie Mellon University studying Decision Science and Human-
-                            Computer Interaction.</p>
-                        <p> Decision Science involves the application of scientific methods and analytical techniques to make informed decisions. It encompasses various disciplines, such as statistics, mathematics, and behavioral science, to understand and optimize decision-making processes. HCI, on the other hand, focuses on the design and interaction between humans and computers, ensuring that technology is user-friendly, efficient, and meets users' needs.</p>
-                        <p> Combining knowledge in Decision Science and Human-Computer Interaction, I aim to leverage data-driven insights and user-centric design principles to innovate in healthcare technology. In the realm of healthcare, where decisions can have a profound impact on patient outcomes, integrating these disciplines becomes crucial. By understanding the intricacies of decision-making in healthcare contexts and developing technology that aligns with the needs and preferences of patients, I aspire to enhance the overall healthcare experience.</p>
+                        <p>Hi! My name is Amelia Austin, and I am currently a senior at Carnegie Mellon University studying Decision Science and Human-Computer Interaction.</p>
+                        <p>Decision Science involves the application of scientific methods and analytical techniques to make informed decisions. It encompasses various disciplines, such as statistics, mathematics, and behavioral science, to understand and optimize decision-making processes. HCI, on the other hand, focuses on the design and interaction between humans and computers, ensuring that technology is user-friendly, efficient, and meets users' needs.</p>
+                        <p>Combining knowledge in Decision Science and Human-Computer Interaction, I aim to leverage data-driven insights and user-centric design principles to innovate in healthcare technology. In the realm of healthcare, where decisions can have a profound impact on patient outcomes, integrating these disciplines becomes crucial. By understanding the intricacies of decision-making in healthcare contexts and developing technology that aligns with the needs and preferences of patients, I aspire to enhance the overall healthcare experience.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        
-
         <!-- project section -->
         <div id="projects">
-            <div class="container" id="lottie-container-projects">
+            <!-- bootstrap container -->
+            <div class="container">
+                <!-- project header -->
                 <div class="project-header-text">
                     <h1>02. Projects</h1>
                 </div>
 
+                <!-- project list -->
                 <div class="project-list">
+                    <!-- escape the castle project -->
                     <div class="project">
-                        <lottie-player class="lottie" src="castle.json" background="#6C7895"  speed="1"  style="width: 100%;" loop autoplay>
+                        <!-- animation cover for escape the castle -->
+                        <lottie-player class="lottie" src="animations/castle.json" background="#6C7895"  speed="1"  style="width: 100%;" loop autoplay>
                         </lottie-player>
-                        <a href="castle.html">
+                        <a href="projects/castle.html">
+                            <!-- layered text on hover -->
                             <div class="layer">
                                 <h3>Escape The Castle</h3>
                                 <p>Creating a competitive and collaborative game to make players more consious of socio-economic bias</p>
@@ -109,39 +125,44 @@
                         </a>
                     </div>
 
-                    
+                    <!-- nofilter project -->
                     <div class="project">
-                        <lottie-player class="lottie" src="instagram.json" background="#6C7895"  speed="1"  style="width: 100%;" loop autoplay>
+                        <!-- animation cover for nofilter -->
+                        <lottie-player class="lottie" src="animations/instagram.json" background="#6C7895"  speed="1"  style="width: 100%;" loop autoplay>
                         </lottie-player>
-                        <a href="nofilter.html">
+                        <a href="projects/nofilter.html">
+                            <!-- layered text on hover -->
                             <div class="layer">
                                 <h3> #NoFilter </h3>
-                                <p>
-                                    Designing an Instagram campaign to incentivize users to not filter their posted photos
-                                </p>
+                                <p> Designing an Instagram campaign to incentivize users to not filter their posted photos</p>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- contact section -->
+
+        <!-- contact section with boostrap container-->
         <div id = "contact" class="container">
+            <!-- contact title text -->
             <h1> 03. Contact </h1>
+            <!-- bootstrap row -->
             <div class="row">
+                <!-- bootstrap half screen column -->
+                <!-- class used to control width and center each half -->
                 <div class="col-lg-6 contact-row">
-                    <div class="contact-text" >
+                    <div class="contact-text">
                         <h3> Please get in touch! </h3>
                     </div>
                 </div>
                 <div class="col-lg-6 contact-row">
+                    <!-- social media icons with links to connect -->
                     <ul class="icons">
                         <li><a href="https://www.linkedin.com/in/ameliaaustin/" style = "color: black;" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn </a></li>
                         <li><a href="mailto:ameliaa@andrew.cmu.edu" rel="noopener noreferrer" target="_blank" style = "color: black;"><i class="fa-regular fa-envelope"></i> Email </a></li>
                     </ul>
                 </div>
             </div>
-          
         </div>
     </body>
 </html>
