@@ -276,7 +276,7 @@ nav ul li a {
     inline-size: 500px;
 }
 
-.instagram-lottie {
+.lottie {
     width: 500px;
     height: 370px;
     overflow: hidden;
@@ -328,7 +328,6 @@ span {
 
 .row {
     flex-direction: row;
-    /* margin-bottom: 50px; */
 }
 
 .stakeholders {
